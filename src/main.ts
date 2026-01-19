@@ -53,6 +53,3 @@ app.listen(config.api.port, () => {
 app.listen(Number(port), () => {
   console.log(`Server running on port ${port}`);
 }); */
-/* function unused() {
-  return "I am unused";
-} */
