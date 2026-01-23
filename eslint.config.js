@@ -6,6 +6,7 @@ import json from "@eslint/json";
 import markdown from "@eslint/markdown";
 import css from "@eslint/css";
 import { defineConfig } from "eslint/config";
+import pluginSecurity from "eslint-plugin-security";
 
 export default defineConfig([
   // Top-level global rules
@@ -27,9 +28,10 @@ export default defineConfig([
       },
     },
   },
-
+  
   // TypeScript recommended rules
   tseslint.configs.recommended,
+  pluginSecurity.configs.recommended,
 
   // JSON
   {
